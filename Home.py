@@ -33,8 +33,8 @@ def convert():
             filterimage, mask = filtering_band_filter_order(img, int(cutOffEntry.get()), int(change_dropdown.WidthEntry.get()),order,filtertype)
         else:
             filterimage, mask = filtering_band_filter(img, int(cutOffEntry.get()), int(change_dropdown.WidthEntry.get()),filtertype)
-    
-
+    else:
+        filterimage, mask = filtering(img, int(cutOffEntry.get()), filtertype='Ideal Low Pass')
 
     imagejpg = Image.fromarray(filterimage)
     imagejpg.save("output.jpg")
