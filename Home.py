@@ -27,12 +27,13 @@ def convert():
             filterimage,mask = filtering_order(img, int( cutOffEntry.get()),filtertype,order)
         else:
             filterimage, mask = filtering(img, int(cutOffEntry.get()), filtertype)
-    if (tkVarFilter.get() == 'Band Filter'):
+    elif (tkVarFilter.get() == 'Band Filter'):
         if (tkVarPass.get() == 'Butterworth Low Pass') or (tkVarPass.get() == 'Butterworth High Pass'):
             order = int(change_dropdown.orderEntry.get())
             filterimage, mask = filtering_band_filter_order(img, int(cutOffEntry.get()), int(change_dropdown.WidthEntry.get()),order,filtertype)
         else:
             filterimage, mask = filtering_band_filter(img, int(cutOffEntry.get()), int(change_dropdown.WidthEntry.get()),filtertype)
+    
 
 
     imagejpg = Image.fromarray(filterimage)
