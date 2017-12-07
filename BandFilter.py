@@ -1,5 +1,6 @@
 import numpy as np
 import math as math
+import cv2
 
 def get_ideal_low_pass_filter( shape, cutoff,width):
 
@@ -32,8 +33,7 @@ def get_butterworth_low_pass_filter( shape, cutoff,order,width):
                 mask_image[i][j] = 0
             else:
                 mask_image[i][j] = 1 / (1 + (((distance * width) / (distance ** 2 - cutoff ** 2)) ** (2 * order)))
-    # cv2.imshow("ButterLow", mask_image)
-    # cv2.waitKey(0)
+
     return mask_image
 
 def get_butterworth_high_pass_filter( shape, cutoff,order,width):
@@ -110,8 +110,11 @@ def filtering_band_filter_order(image,cutoff,order,width,filtertype):
     else:
         mask=get_butterworth_high_pass_filter(s,cutoff,order,width)
 
-    filter_image = shift_image * mask
+    filter_image = shift_image * (mask*200)
+   # filter_finalimg1= np.log(np.absolute(filter_image)) * 10
     filter_finalimg = np.uint8(np.log(np.absolute(filter_image)) * 10)
+    # cv2.imshow("ButterLow",filter_finalimg)
+    #cv2.waitKey(0)
 
     ishift_image = np.fft.ifftshift(filter_image)
     ifft_image = np.fft.ifft2(ishift_image)

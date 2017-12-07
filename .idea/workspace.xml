@@ -26,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BandFilter.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BandFilter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BandFilter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="81" column="17" lean-forward="false" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+            <state relative-caret-position="217">
+              <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="36" column="93" lean-forward="false" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
+            <state relative-caret-position="-946">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -91,6 +91,7 @@
       <find>change_dropdown</find>
       <find>ord</find>
       <find>saveimage</find>
+      <find>ButterLow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -103,11 +104,11 @@
         <option value="$PROJECT_DIR$/HomePage.py" />
         <option value="$PROJECT_DIR$/Filtering.py" />
         <option value="$USER_HOME$/assignment2folder/DFT/Filtering.py" />
-        <option value="$PROJECT_DIR$/BandFilter.py" />
         <option value="$PROJECT_DIR$/sample.py" />
         <option value="$PROJECT_DIR$/fftsymmetry.py" />
         <option value="$PROJECT_DIR$/notch.py" />
         <option value="$PROJECT_DIR$/Home.py" />
+        <option value="$PROJECT_DIR$/BandFilter.py" />
       </list>
     </option>
   </component>
@@ -690,16 +691,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BandFilter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="81" column="17" lean-forward="false" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fftsymmetry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -732,10 +723,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="93" lean-forward="false" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
+        <state relative-caret-position="-946">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BandFilter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
