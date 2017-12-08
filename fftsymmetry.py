@@ -11,8 +11,8 @@ def DFT_slow(x):
 
 def FFT(img):
 
-    img = np.asarray(x, dtype=float)
-    N = x.shape[0]
+    img = np.asarray(img, dtype=float)
+    N = img.shape[0]
 
     if N % 2 > 0:
         raise ValueError("size of x must be a power of 2")
@@ -27,15 +27,15 @@ def FFT(img):
                                img_even + factor[int(N / 2):] * img_odd])
 
 
-x = np.random.random(1024)
+img = np.random.random(1024)
 start=time.clock()
-print(start)
-FFT(x)
+
+FFT(img)
 end=time.clock()
 print(end-start)
 start1=time.clock()
 #print(start1)
-np.fft.fft(x)
+np.fft.fft(img)
 end1=time.clock()
 print(end1-start1)
 
