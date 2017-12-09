@@ -176,7 +176,7 @@ popupMenuPass.place(x=300,y=550)
 #function for what each type of drop down will do
 def change_dropdown(*args):
     if tkVarPass.get() == 'Butterworth Low Pass':
-        print("in")
+      
         lowInput= None
         order = Label(root,text="Order ",fg="black")
         order.place(x=565,y=525)
